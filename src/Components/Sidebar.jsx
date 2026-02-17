@@ -1,12 +1,22 @@
-import { FaTachometerAlt, FaUser } from "react-icons/fa";
+import { FaTachometerAlt, FaUser, FaCar, FaUsers } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ setActiveTab }) => {
   return (
     <div className="sidebar">
       <h2>BRAND</h2>
       <ul>
-        <li><FaTachometerAlt /> Dashboard</li>
-        <li><FaUser /> Profile</li>
+        <li onClick={() => setActiveTab("dashboard")}>
+          <FaTachometerAlt /> Dashboard
+        </li>
+        <li onClick={() => setActiveTab("vehicles")}>
+          <FaCar /> Vehicles
+        </li>
+        <li onClick={() => setActiveTab("customers")}>
+          <FaUsers /> Customers
+        </li>
+        <li onClick={() => setActiveTab("staff")}>
+          <FaUser /> Staff
+        </li>
       </ul>
     </div>
   );

@@ -202,4 +202,37 @@ body{
   background: #444;
 }
 
+.table-section {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #4e73df;
+  color: white;
+}
+
+.sidebar ul li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
 
